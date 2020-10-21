@@ -68,49 +68,9 @@ public class FWA_131 {
     wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[contains(text(),'Change payment')]")));
     driver.findElement(By.xpath("//button[contains(text(),'Change payment')]")).click();	
     Thread.sleep(3000);
-    
-  //  driver.findElement(By.xpath("//button[contains(text(),'Change payment')]")).click();
-  //  Thread.sleep(3000);
-    
-    
-    
-    
-    
-    
-  // Add Payment is still giving issues   
-    
-    
-  //  Actions act =  new Actions(driver);
-  //  act.moveToElement(driver.findElement(By.xpath("//body/app-root[1]/ng-component[1]/div[1]/main[1]/ng-component[1]/ng-component[1]/div[1]/wo-halfs[1]/div[2]/animation[1]/animation[1]/div[1]/payments-list[1]/div[1]/div[1]/div[2]/button[1]"))).click().perform();
-    
-  //  new WebDriverWait(driver, 30).until(ExpectedConditions.elementToBeClickable(By.xpath("//body/app-root[1]/ng-component[1]/div[1]/main[1]/ng-component[1]/ng-component[1]/div[1]/wo-halfs[1]/div[2]/animation[1]/animation[1]/div[1]/payments-list[1]/div[1]/div[1]/div[2]/button[1]"))).click();
   
-   // driver.findElement(By.cssSelector("body.wo-browser-default.wo-lang-en:nth-child(4) div.wo-freshii-base-component.d-flex.flex-column:nth-child(1) main.wo-container-component:nth-child(2) ng-component.ng-star-inserted:nth-child(2) ng-component.ng-star-inserted:nth-child(2) div.wo-orders-freshii-component wo-halfs.d-flex.pb-3 div.wo-right-col.bg-white.col.col-xl-6.pl-xl-0 animation.wo-animation-component animation.wo-animation-component.ng-star-inserted div.h-100 payments-list.ng-star-inserted div.wo-freshii-payments-list.common-column-white div.px-4.pb-4 div.mt-2.text-center > button.common-button-cancel.text-capitalize.font-weight-bold.px-2.ng-star-inserted")).click();
-   // Thread.sleep(3000);
-    
     driver.findElement(By.xpath("//body/app-root[1]/ng-component[1]/div[1]/main[1]/ng-component[1]/ng-component[1]/div[1]/wo-halfs[1]/div[2]/animation[1]/animation[1]/div[1]/payments-list[1]/div[1]/div[1]/div[2]/button[1]")).click();  
     Thread.sleep(10000);
-    
- /* WebDriverWait wait1 = new WebDriverWait(driver, 30);
-    wait1.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//body/app-root[1]/ng-component[1]/div[1]/main[1]/ng-component[1]/ng-component[1]/div[1]/wo-halfs[1]/div[2]/animation[1]/animation[1]/div[1]/payments-list[1]/div[1]/div[1]/div[2]/button[1]")));
-    driver.findElement(By.xpath("//body/app-root[1]/ng-component[1]/div[1]/main[1]/ng-component[1]/ng-component[1]/div[1]/wo-halfs[1]/div[2]/animation[1]/animation[1]/div[1]/payments-list[1]/div[1]/div[1]/div[2]/button[1]")).click();	
-    Thread.sleep(3000);
-*/
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/ng-component[1]/div[1]/main[1]/ng-component[1]/ng-component[1]/div[1]/wo-halfs[1]/div[2]/animation[1]/animation[1]/animation[1]/div[1]/card-add[1]/div[1]/form[1]/md-input[1]/input[1]")).sendKeys("Mumm Danny");
     Thread.sleep(3000);    
     driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/ng-component[1]/div[1]/main[1]/ng-component[1]/ng-component[1]/div[1]/wo-halfs[1]/div[2]/animation[1]/animation[1]/animation[1]/div[1]/card-add[1]/div[1]/form[1]/md-card[1]/input[1]")).sendKeys("4788250000121443");
