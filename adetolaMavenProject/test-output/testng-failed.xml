@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.org.learningMaven.myMavenProject2.FWA_131">
+      <class name="com.org.learningMaven.myMavenProject2.FWA_138">
         <methods>
           <include name="checkTitleMatch"/>
-          <include name="addPaymentMethodWhilePlacingOrders"/>
-          <include name="openFreshiiBrowser"/>
+          <include name="refundPlacedOrder"/>
           <include name="quitFreshiiApp"/>
+          <include name="openFreshiiBrowser"/>
         </methods>
-      </class> <!-- com.org.learningMaven.myMavenProject2.FWA_131 -->
+      </class> <!-- com.org.learningMaven.myMavenProject2.FWA_138 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
