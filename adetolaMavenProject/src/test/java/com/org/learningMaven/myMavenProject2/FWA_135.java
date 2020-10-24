@@ -37,9 +37,7 @@ public class FWA_135 {
     
     //Enter Email and password
     driver.findElement(By.xpath("//input[@id='mat-input-0']")).sendKeys("testing8593@gmail.com");
-    Thread.sleep(5000);
     driver.findElement(By.xpath("//input[@id='mat-input-1']")).sendKeys("sample@123");
-    Thread.sleep(5000);
     driver.findElement(By.xpath("//button[contains(text(),'login')]")).click();
     Thread.sleep(5000);
     
@@ -66,7 +64,7 @@ public class FWA_135 {
     Thread.sleep(5000);
     
   //Checking if New user Referral reward is visible
-    Boolean userReferralCode = driver.findElement(By.xpath("//span[contains(text(),'Referral Reward')]")).isDisplayed();
+    Boolean userReferralCode = driver.findElement(By.xpath("//span[contains(text(),'Loyalty Reward')]")).isDisplayed();
     Thread.sleep(5000);
     System.out.println("Congrats, you have your referral reward!"); 
   	} 

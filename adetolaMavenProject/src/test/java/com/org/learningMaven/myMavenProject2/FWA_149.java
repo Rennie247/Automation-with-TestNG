@@ -31,15 +31,13 @@ public class FWA_149 {
   public void reviewPickUpOrderWhenOffersAndRewardsAreNotAvailable() throws InterruptedException {   
 		//Log in user
 	    driver.findElement(By.xpath("//span[contains(text(),'Log in/Sign up')]")).click();
-	    Thread.sleep(5000);
+	    Thread.sleep(3000);
 	    
 	    //Enter Email and password
 	    driver.findElement(By.xpath("//input[@id='mat-input-0']")).sendKeys("testfreshii@abbuzz.com");
-	    Thread.sleep(5000);
 	    driver.findElement(By.xpath("//input[@id='mat-input-1']")).sendKeys("sample@123");
-	    Thread.sleep(5000);
 	    driver.findElement(By.xpath("//button[contains(text(),'login')]")).click();
-	    Thread.sleep(5000);
+	    Thread.sleep(3000);
 	    
 	    //placing a new order for Baja Burritos
 	    driver.findElement(By.xpath("//button[contains(text(),'Order now')]")).click();
@@ -56,14 +54,19 @@ public class FWA_149 {
 	    Thread.sleep(3000);
 	    driver.findElement(By.xpath("//button[contains(text(),'Checkout')]")).click();
 	    Thread.sleep(3000);
+	    System.out.println("Menu added to cart");
 	    
 	    //Selecting available rewards and offers
 	    driver.findElement(By.xpath("//button[contains(text(),'View all rewards & offers')]")).click();
+	    Thread.sleep(5000);
+	    driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/ng-component[1]/div[1]/main[1]/ng-component"
+	    		+ "[1]/ng-component[1]/div[1]/wo-halfs[1]/div[2]/animation[1]/animation"
+	    		+ "[1]/div[1]/offers-list[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/span[1]/button[1]/img[1]")).click();
 	    Thread.sleep(3000);
-	    driver.findElement(By.xpath("//body/app-root[1]/ng-component[1]/div[1]/main[1]/ng-component[1]/ng-component[1]/div[1]/wo-halfs[1]/div[2]/animation[1]/animation[1]/div[1]/offers-list[1]/div[1]/div[1]/div[1]/ul[1]/li[1]/span[1]/button[1]/img[1]")).click();
+	    driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/ng-component[1]/div[1]/main[1]/ng-component[1]/ng-component"
+	    		+ "[1]/div[1]/wo-halfs[1]/div[2]/animation[1]/animation[1]/div[1]/offers-list[1]/div[1]/wo-column-header[1]/button[1]/img[1]")).click();
 	    Thread.sleep(3000);
-	    driver.findElement(By.xpath("//body[1]/app-root[1]/ng-component[1]/div[1]/main[1]/ng-component[1]/ng-component[1]/div[1]/wo-halfs[1]/div[2]/animation[1]/animation[1]/div[1]/offers-list[1]/div[1]/wo-column-header[1]/button[1]/img[1]")).click();
-	    Thread.sleep(3000);
+	    System.out.println("Select rewards and offers");
 	    
 	    //Placing a later order
 	    driver.findElement(By.xpath("//button[contains(text(),'LATER')]")).click();
@@ -71,7 +74,7 @@ public class FWA_149 {
 	    driver.findElement(By.xpath("//button[contains(text(),'ok')]")).click();
 	    Thread.sleep(3000);
 	    driver.findElement(By.xpath("//button[contains(text(),'PLACE ORDER')]")).click();
-	    Thread.sleep(3000);
+	    Thread.sleep(7000);
 	    
 	    System.out.println("The user can Review the PickUp Order when Offers and Rewards are not available");
 	    

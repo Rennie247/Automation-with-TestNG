@@ -68,16 +68,13 @@ public class FWA_150 {
 	    Thread.sleep(3000); 
 	    driver.findElement(By.xpath("//div[@id='category-btn-67994']")).click();
 	    Thread.sleep(3000);
-	    driver.findElement(By.xpath("//menu-body/div[1]/items-group[4]/div[1]/div[1]/div[5]/item[1]/a[1]/div[1]/div[1]/div[1]")).click();
+	    driver.findElement(By.xpath("(//a[@id='itemInGroup67994']/div/div/div)[9]")).click();
 	    Thread.sleep(3000);
 	    driver.findElement(By.xpath("//button[contains(text(),'+')]")).click();
 	    Thread.sleep(3000);
-	///    driver.findElement(By.xpath("//button[contains(text(),'ADD TO BAG')]")).click();
-	///    Thread.sleep(3000);
-	///    driver.findElement(By.xpath("//button[contains(text(),'no, thanks')]")).click();
-	///    Thread.sleep(3000);
 	    driver.findElement(By.xpath("//button[contains(text(),'DONE')]")).click();
 	    Thread.sleep(3000);
+	    driver.findElement(By.xpath("//button[contains(text(),'Checkout')]")).click();
 	    driver.findElement(By.xpath("//button[contains(text(),'Checkout')]")).click();
 	    Thread.sleep(3000);
 	 
@@ -90,7 +87,7 @@ public class FWA_150 {
 	 */
 	    
 	    //Check Taxes
-	    driver.findElement(By.xpath("//div[contains(text(),'Tax')]")).click();
+	    driver.findElement(By.xpath("//div[@id='wo-review-component']/div/div[2]/div")).click();
 	    Thread.sleep(3000);
 	   
 	    

@@ -35,9 +35,7 @@ public class FWA_148 {
 	    
 	    //Enter Email and password
 	    driver.findElement(By.xpath("//input[@id='mat-input-0']")).sendKeys("testfreshii@abbuzz.com");
-	    Thread.sleep(5000);
 	    driver.findElement(By.xpath("//input[@id='mat-input-1']")).sendKeys("sample@123");
-	    Thread.sleep(5000);
 	    driver.findElement(By.xpath("//button[contains(text(),'login')]")).click();
 	    Thread.sleep(5000);
 	    
@@ -67,11 +65,11 @@ public class FWA_148 {
 	*/    
 	    //Placing a later order
 	    driver.findElement(By.xpath("//button[contains(text(),'LATER')]")).click();
-	    Thread.sleep(3000);
+	    Thread.sleep(5000);
 	    driver.findElement(By.xpath("//button[contains(text(),'ok')]")).click();
-	    Thread.sleep(3000);
+	    Thread.sleep(5000);
 	    driver.findElement(By.xpath("//button[contains(text(),'PLACE ORDER')]")).click();
-	    Thread.sleep(3000);
+	    Thread.sleep(5000);
 	    
 	    System.out.println("The user can Review the PickUp Order when Offers and Rewards are applied");
 	    

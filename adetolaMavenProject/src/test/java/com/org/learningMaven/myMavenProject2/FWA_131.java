@@ -34,9 +34,7 @@ public class FWA_131 {
     driver.findElement(By.xpath("//span[contains(text(),'Log in/Sign up')]")).click();
     Thread.sleep(5000);
     driver.findElement(By.xpath("//input[@id='mat-input-0']")).sendKeys("testing8593@gmail.com");
-    Thread.sleep(3000);
     driver.findElement(By.xpath("//input[@id='mat-input-1']")).sendKeys("sample@123");
-    Thread.sleep(3000);
     driver.findElement(By.xpath("//button[contains(text(),'login')]")).click();
     Thread.sleep(6000);
     
@@ -46,7 +44,6 @@ public class FWA_131 {
     wait4.until(ExpectedConditions.visibilityOfElementLocated(By.id("mat-input-7")));
     if (!driver.findElement(By.id("mat-input-7")).isSelected() ) {
         driver.findElement(By.id("mat-input-7")).sendKeys("M9P2S1");
-        Thread.sleep(5000);
         driver.findElement(By.xpath("//button[contains(text(),'SIGN UP')]")).click();
         Thread.sleep(5000);    
     } else {
@@ -64,11 +61,11 @@ public class FWA_131 {
     driver.findElement(By.xpath("//body/app-root[1]/ng-component[1]/div[1]/main[1]/ng-component[1]/ng-component[1]/div[1]/div[2]/location-list[1]/article[5]/location-item[1]/div[2]/div[2]/button[1]")).click();
     Thread.sleep(3000);
     driver.findElement(By.xpath("//div[@id='category-btn-67994']")).click();
-    Thread.sleep(3000);
+    Thread.sleep(5000);
     System.out.println("Teriyaki Burritos is selected");
     
    
-    driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/ng-component[1]/div[1]/main[1]/ng-component[1]/ng-component[1]/div[1]/menu-body[1]/div[1]/items-group[4]/div[1]/div[1]/div[5]/item[1]/a[1]/div[2]/div[1]/div[1]")).click();
+    driver.findElement(By.xpath("//menu-body/div[1]/items-group[4]/div[1]/div[1]/div[4]/item[1]/a[1]/div[1]/div[1]/div[1]")).click();
     Thread.sleep(3000);
     
     //Increment quantity of orders
@@ -90,7 +87,7 @@ public class FWA_131 {
 
     //Entered Credit Card details
     driver.findElement(By.xpath("//body/app-root[1]/ng-component[1]/div[1]/main[1]/ng-component[1]/ng-component[1]/div[1]/wo-halfs[1]/div[2]/animation[1]/animation[1]/div[1]/payments-list[1]/div[1]/div[1]/div[2]/button[1]")).click();  
-    Thread.sleep(10000);   
+    Thread.sleep(5000);   
     driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/ng-component[1]/div[1]/main[1]/ng-component[1]/ng-component[1]/div[1]/wo-halfs[1]/div[2]/animation[1]/animation[1]/animation[1]/div[1]/card-add[1]/div[1]/form[1]/md-input[1]/input[1]")).sendKeys("Mumm Danny");
     Thread.sleep(3000);    
     driver.findElement(By.xpath("/html[1]/body[1]/app-root[1]/ng-component[1]/div[1]/main[1]/ng-component[1]/ng-component[1]/div[1]/wo-halfs[1]/div[2]/animation[1]/animation[1]/animation[1]/div[1]/card-add[1]/div[1]/form[1]/md-card[1]/input[1]")).sendKeys("4788250000121443");

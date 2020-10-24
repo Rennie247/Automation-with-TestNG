@@ -60,13 +60,13 @@ public class FWA_146 {
 	    
 	    //Place a later order
 	    driver.findElement(By.xpath("//button[contains(text(),'LATER')]")).click();
-	    Thread.sleep(3000);
+	    Thread.sleep(5000);
 	    driver.findElement(By.xpath("//button[contains(text(),'ok')]")).click();
-	    Thread.sleep(3000);
+	    Thread.sleep(5000);
 	    
 	    //Place order
 	    driver.findElement(By.xpath("//button[contains(text(),'PLACE ORDER')]")).click();
-	    Thread.sleep(3000);
+	    Thread.sleep(5000);
 	    System.out.println("The user can Review the PickUp Order when Offers are available");
 	    
   	} 
